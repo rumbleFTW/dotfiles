@@ -43,8 +43,12 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
+  services.xserver = {
+    enable = true;
+    # xkbOptions = "termminate:ctrl_alt_bksp";
+    # windowManager.BSPWM.enable = true;
+    # windowManager.bspwm.startSxhkd = true;
+  };
   # Setup OpenSSH
   services.openssh = {
     enable = true;
@@ -58,8 +62,14 @@
   '';
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.gdm.enable = false;
+  services.xserver.desktopManager.gnome.enable = false;
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+  services.xserver.displayManager.sddm.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -124,7 +134,9 @@
         };
     };
   };
-
+  
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -140,12 +152,32 @@
     neofetch
     vscode
     cargo
+    python3
     conda
     git
     curl
     pipes
     docker
+    conda
+    google-chrome
+    neovim
+    waybar
+    grim
+    slurp
+    wl-clipboard
+    dunst
+    swww
+    nerdfonts
+    rofi-wayland
+    kitty 
+    alacritty
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.compiz-alike-magic-lamp-effect
+    gnomeExtensions.burn-my-windows
+    papirus-icon-theme 
   ];
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -173,5 +205,5 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
-
+  
 }
