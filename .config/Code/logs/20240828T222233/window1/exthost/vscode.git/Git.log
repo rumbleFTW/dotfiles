@@ -1,0 +1,63 @@
+2024-08-28 22:22:38.594 [info] [main] Log level: Info
+2024-08-28 22:22:38.594 [info] [main] Validating found git in: "git"
+2024-08-28 22:22:38.594 [info] [main] Using git "2.46.0" from "git"
+2024-08-28 22:22:38.594 [info] [Model][doInitialScan] Initial repository scan started
+2024-08-28 22:22:38.594 [info] > git rev-parse --show-toplevel [5ms]
+2024-08-28 22:22:38.595 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-08-28 22:22:38.602 [info] [Model][openRepository] Opened repository: /home/rumbleftw/Development/Personal/dotfiles
+2024-08-28 22:22:38.612 [info] > git rev-parse --show-toplevel [5ms]
+2024-08-28 22:22:38.615 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-08-28 22:22:38.616 [info] > git config --get commit.template [9ms]
+2024-08-28 22:22:38.643 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [11ms]
+2024-08-28 22:22:38.648 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rumbleftw/Development/Personal/dotfiles/.git/refs/remotes/origin/main'
+2024-08-28 22:22:38.648 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2024-08-28 22:22:38.669 [info] > git status -z -uall [18ms]
+2024-08-28 22:22:38.679 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2024-08-28 22:22:38.684 [info] > git config --local branch.main.vscode-merge-base [2ms]
+2024-08-28 22:22:38.684 [warning] [Git][config] git config failed: Failed to execute git
+2024-08-28 22:22:38.688 [info] > git config --get commit.template [9ms]
+2024-08-28 22:22:38.719 [info] > git reflog main --grep-reflog=branch: Created from *. [32ms]
+2024-08-28 22:22:38.742 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [20ms]
+2024-08-28 22:22:38.744 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [25ms]
+2024-08-28 22:22:38.749 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rumbleftw/Development/Personal/dotfiles/.git/refs/remotes/origin/main'
+2024-08-28 22:22:38.750 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [6ms]
+2024-08-28 22:22:38.754 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-08-28 22:22:38.757 [info] > git config --local branch.main.vscode-merge-base origin/main [5ms]
+2024-08-28 22:22:38.763 [info] > git status -z -uall [7ms] (cancelled)
+2024-08-28 22:22:38.764 [info] > git config --get commit.template [1ms]
+2024-08-28 22:22:38.768 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-08-28 22:22:38.771 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rumbleftw/Development/Personal/dotfiles/.git/refs/remotes/origin/main'
+2024-08-28 22:22:38.771 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-08-28 22:22:38.792 [info] > git status -z -uall [18ms]
+2024-08-28 22:22:38.800 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-08-28 22:22:38.804 [info] > git merge-base refs/heads/main refs/remotes/origin/main [4ms]
+2024-08-28 22:22:38.807 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-08-28 22:22:38.812 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [6ms]
+2024-08-28 22:22:38.815 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-08-28 22:22:38.816 [info] > git diff --name-status -z --diff-filter=ADMR fc35e371587c629a020844ffd910ef596176f338...refs/remotes/origin/main [1ms]
+2024-08-28 22:22:39.134 [info] > git check-ignore -v -z --stdin [4ms]
+2024-08-28 22:22:39.854 [info] > git config --get commit.template [9ms]
+2024-08-28 22:22:39.856 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-08-28 22:22:39.863 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rumbleftw/Development/Personal/dotfiles/.git/refs/remotes/origin/main'
+2024-08-28 22:22:39.865 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2024-08-28 22:22:39.919 [info] > git status -z -uall [47ms]
+2024-08-28 22:22:39.924 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-08-28 22:22:39.929 [info] > git config --local branch.main.vscode-merge-base [1ms]
+2024-08-28 22:22:39.932 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [0ms]
+2024-08-28 22:22:41.499 [info] > git show --textconv :.bashrc [5ms]
+2024-08-28 22:22:41.500 [info] > git ls-files --stage -- /home/rumbleftw/Development/Personal/dotfiles/.bashrc [2ms]
+2024-08-28 22:22:41.506 [info] > git cat-file -s baa942fc437910b2dbddf465ccd29b21e74b12d1 [4ms]
+2024-08-28 22:22:42.643 [info] > git show --textconv :.zshrc [11ms]
+2024-08-28 22:22:42.646 [info] > git ls-files --stage -- /home/rumbleftw/Development/Personal/dotfiles/.zshrc [4ms]
+2024-08-28 22:22:42.656 [info] > git cat-file -s 60fd53144d30d1c7f1a1a27a7603442bf56ce154 [3ms]
+2024-08-28 22:22:49.395 [info] > git config --get commit.template [1ms]
+2024-08-28 22:22:49.398 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-08-28 22:22:49.400 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/rumbleftw/Development/Personal/dotfiles/.git/refs/remotes/origin/main'
+2024-08-28 22:22:49.400 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2024-08-28 22:22:49.423 [info] > git status -z -uall [21ms]
+2024-08-28 22:22:49.428 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-08-28 22:22:49.432 [info] > git config --local branch.main.vscode-merge-base [1ms]
+2024-08-28 22:22:49.435 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2024-08-28 22:22:50.513 [info] > git ls-files --stage -- /home/rumbleftw/Development/Personal/dotfiles/.zshrc [1ms]
+2024-08-28 22:22:50.516 [info] > git cat-file -s 60fd53144d30d1c7f1a1a27a7603442bf56ce154 [0ms]
+2024-08-28 22:22:50.520 [info] > git show --textconv :.zshrc [1ms]
