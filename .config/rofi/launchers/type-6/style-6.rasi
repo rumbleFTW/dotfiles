@@ -9,7 +9,7 @@ configuration {
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
-    icon-theme:                  "Rose-Pine";
+    icon-theme:                  "Mono";
 }
 
 /*****----- Main Window -----*****/
@@ -22,12 +22,12 @@ window {
     fullscreen:                  false;
     x-offset:                    0px;
     y-offset:                    0px;
-    enabled:                     true; 
+    enabled:                     true;
     border:                      2px solid;
     border-radius:               20px;
-    border-color:                #a89984;
+    border-color:                #888888;
     cursor:                      "default";
-    background-color:            #282828;
+    background-color:            #202020;
 }
 
 /*****----- Main Box -----*****/
@@ -42,7 +42,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Pictures/Wallpapers/forest.jpg", height);
+    background-image:            url("~/Downloads/HbdWsMA.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
@@ -65,8 +65,8 @@ inputbar {
     spacing:                     10px;
     padding:                     10px;
     border-radius:               15px;
-    background-color:            #3c3836;
-    text-color:                  #ebdbb2;
+    background-color:            #303030;
+    text-color:                  #e0e0e0;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 textbox-prompt-colon {
@@ -90,18 +90,18 @@ mode-switcher {
     enabled:                     true;
     spacing:                     20px;
     background-color:            transparent;
-    text-color:                  #ebdbb2;
+    text-color:                  #e0e0e0;
 }
 button {
     padding:                     17px;
     border-radius:               30px;
-    background-color:            #3c3836;
+    background-color:            #303030;
     text-color:                  inherit;
     cursor:                      pointer;
 }
 button selected {
-    background-color:            #504945;
-    text-color:                  #ebdbb2;
+    background-color:            #404040;
+    text-color:                  #ffffff;
     padding:                     15px;
     border-radius:               30px;
 }
@@ -120,7 +120,7 @@ listview {
     fixed-columns:               true;
     spacing:                     5px;
     background-color:            transparent;
-    text-color:                  #ebdbb2;
+    text-color:                  #e0e0e0;
     cursor:                      "default";
 }
 
@@ -131,7 +131,7 @@ element {
     padding:                     8px;
     border-radius:               15px;
     background-color:            transparent;
-    text-color:                  #ebdbb2;
+    text-color:                  #e0e0e0;
     cursor:                      pointer;
 }
 element normal.normal {
@@ -139,24 +139,24 @@ element normal.normal {
     text-color:                  inherit;
 }
 element normal.urgent {
-    background-color:            #cc241d;
-    text-color:                  #ebdbb2;
+    background-color:            #808080;
+    text-color:                  #ffffff;
 }
 element normal.active {
-    background-color:            #98971a;
-    text-color:                  #ebdbb2;
+    background-color:            #606060;
+    text-color:                  #ffffff;
 }
 element selected.normal {
-    background-color:            #504945;
-    text-color:                  #ebdbb2;
+    background-color:            #404040;
+    text-color:                  #ffffff;
 }
 element selected.urgent {
-    background-color:            #fb4934;
-    text-color:                  #ebdbb2;
+    background-color:            #a0a0a0;
+    text-color:                  #ffffff;
 }
 element selected.active {
-    background-color:            #b8bb26;
-    text-color:                  #ebdbb2;
+    background-color:            #808080;
+    text-color:                  #ffffff;
 }
 element-icon {
     background-color:            transparent;
@@ -179,14 +179,14 @@ message {
 textbox {
     padding:                     15px;
     border-radius:               10px;
-    background-color:            #504945;
-    text-color:                  #ebdbb2;
+    background-color:            #404040;
+    text-color:                  #ffffff;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
 error-message {
     padding:                     15px;
     border-radius:               20px;
-    background-color:            #282828;
-    text-color:                  #ebdbb2;
+    background-color:            #202020;
+    text-color:                  #ffffff;
 }
